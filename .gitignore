@@ -1,6 +1,5 @@
 .terraform
 .terraform.lock.hcl
-*.destroy.tfplan
-*.main.tfplan
+*.tfplan
 terraform.tfstate
 terraform.tfstate.backup

@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "asg" {
-  source              = "./modules/asg"
+  source              = "../modules/asg"
   az_names            = ["us-east-1a", "us-east-1b"]
   vpc_cidr            = "172.16.0.0/16"
   public_subnet_cidr  = ["172.16.0.0/24", "172.16.1.0/24"]

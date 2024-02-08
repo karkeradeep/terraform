@@ -1,10 +1,4 @@
-# Terraform Variables
-
-# ##### AWS Region #####
-# variable "aws_region" {
-#   description = "Region in which AWS Resources to be created"
-#   type        = string
-# }
+### Terraform Variables ###
 
 ##### Local Values #####
 locals {
@@ -56,6 +50,11 @@ variable "ami" {
 
 variable "instance_type" {
   description = "The type of EC2 Instances to run (e.g. t2.micro)"
+  type        = string
+}
+
+variable "key_name" {
+  description = "The key name that should be used for the instance"
   type        = string
 }
 

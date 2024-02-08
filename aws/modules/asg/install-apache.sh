@@ -3,6 +3,9 @@
 # Install Updates
 sudo yum check-update
 sudo yum -y update
+# Install stress utility
+sudo amazon-linux-extras install epel -y
+sudo yum install stress -y
 # Apache installation, enabling and status check
 sudo yum -y install httpd
 sudo systemctl start httpd
@@ -19,8 +22,6 @@ sudo cat > /var/www/html/index.html << EOF
     </HEAD>
     <BODY>
       <H1> AWS AUTOSCALING DEMO BY DEEPAK KARKERA </H1>
-      <script src="http://www.atmrum.net/rum.js"></script>
-      <script>rum.start("658c7c82d2d479b48971218516a82493");</script>
     </BODY>
 </HTML>
 EOF

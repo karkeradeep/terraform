@@ -22,7 +22,7 @@ module "asg" {
   private_subnet_cidr = ["172.16.11.0/24", "172.16.12.0/24"] # Change as per required subnet cidr
   ami                 = "ami-006dcf34c09e50022" # you can change as per your custom ami
   instance_type       = "t2.micro" 
-  key_name            = "aws-deep-keypair" # add your keypair
+  key_name            = "aws-deep-keypair" # add your keypair required to access instances
   min_size            = 1 # Minimum instance running
   desired_capacity    = 2 # Should not be less than min_size
   max_size            = 5 # Max instances required for scale-up
